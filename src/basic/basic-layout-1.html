@@ -8,27 +8,28 @@
     <style>
       /* Doe hier jouw ding! */
       body{
+    
         display: grid;
         grid-gap:10px;
-        grid-template-columns: 1fr 1fr 3fr 1fr;
-        grid-template-rows:1fr 4fr 1fr;
+        grid-template-columns:  1fr 1fr 3fr 1fr;
+        grid-template-rows:1fr 4fr 1fr; 
         grid-template-areas:
-        ".. top top .."
-        ".. left right .."
-        ".. bottom bottom .."
+        ".. header header .."
+        ".. nav main .."
+        ".. footer footer .."
       }
 
       header {
-        grid-area: top;
+        grid-area: header;
       }
       nav {
-        grid-area: left;
+        grid-area: nav;
       }
       main {
-        grid-area: right;
+        grid-area: main;
       }
       footer {
-        grid-area: bottom;
+        grid-area: footer;
       }
 
     </style>
