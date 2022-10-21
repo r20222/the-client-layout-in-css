@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-areas: 
+         ". main"
+        "header main"
+         ". main"
+         "nav main"
+         ". main"
+         "footer main"
+         ". main";
+        
+        grid-template-rows: 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
+        grid-template-columns: 0.5fr 3fr ;
+      }
+      header {
+        grid-area: header;
+        transform: translate(70px);
+      }
+      nav {
+        grid-area: nav;
+        transform: translate(70px);
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+        transform: translate(70px);
+      }
     </style>
   </head>
   <body id="advanced-layout-3">
